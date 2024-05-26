@@ -56,4 +56,5 @@ def loguear_cliente(usuario: Usuario):
 
 @app.post("/registrar-cliente", response_model=ClienteResponse, status_code=status.HTTP_201_CREATED)
 def registrar_cliente(cliente: Cliente):
+    # aqui debe ir la logica que registre el cliente en la base de datos
     return cliente.model_dump()
